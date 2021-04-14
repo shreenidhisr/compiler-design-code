@@ -1,0 +1,6 @@
+hi this file is created
+to analyze the second program of
+lex it also contains
+words
+blank spaces 
+lines and many one more
