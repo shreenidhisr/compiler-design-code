@@ -16,3 +16,17 @@
 <li> <strong>Rule 3<strong><br>.         { nchar++; } </li>
 
 </ol>
+<h2>3) lex program to count number of positive , negative , fractional numbers</h2>
+<ol> 
+  <pre> [\t]      ;
+[\n]      return 0;
+([0-9]+)    { pos_num++; }
+-([0-9]+)   { neg_num++; }
+
+([0-9]*\.[0-9]+)    |
+([0-9]+\/[0-9]+)    { pos_frac++; }
+
+-([0-9]*\.[0-9]+)   |
+-([0-9]+\/[0-9]+)   { neg_frac++; } </pre>
+
+</ol>
