@@ -1,0 +1,6 @@
+#!/bin/bash
+
+lex p.l
+yacc -d p.y
+cc lex.yy.c y.tab.c -lfl
+
